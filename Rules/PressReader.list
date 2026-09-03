@@ -1,0 +1,14 @@
+# NAME: PressReader
+# PURPOSE: Route PressReader through the policy group PressReader-日本-差.
+# DESIGN: PressReader-specific domains only; broad shared CDNs are intentionally excluded.
+#
+# Sources:
+# https://pressreader.atlassian.net/wiki/spaces/PD/pages/3793879044/Offline%2BServer%2BV4%2BWhitelist
+
+DOMAIN-SUFFIX,pressreader.com
+DOMAIN-SUFFIX,pressreader.io
+DOMAIN-SUFFIX,pressdisplay.com
+DOMAIN-SUFFIX,prcdn.co
+DOMAIN-SUFFIX,newspaperdirect.com
+DOMAIN-SUFFIX,ndcds.net
+DOMAIN,ndcds.trafficmanager.net
