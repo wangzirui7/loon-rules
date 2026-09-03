@@ -1,0 +1,25 @@
+# Copy the lines below into the [Rule] section of an existing Loon profile.
+# Keep them above broad Global, Google, China, or proxy rules.
+# The policy-group names must exactly match your own group names.
+
+# AI -> good subscription only
+DOMAIN-SUFFIX,chatgpt.com,AI-好
+DOMAIN-SUFFIX,openai.com,AI-好
+DOMAIN-SUFFIX,oaistatic.com,AI-好
+DOMAIN-SUFFIX,oaiusercontent.com,AI-好
+DOMAIN-SUFFIX,oaistatsig.com,AI-好
+DOMAIN,cdn.openaimerge.com,AI-好
+DOMAIN,chat.openai.com.cdn.cloudflare.net,AI-好
+
+# PressReader -> Japan nodes from the lower-priority subscription only
+DOMAIN-SUFFIX,pressreader.com,PressReader-日本-差
+DOMAIN-SUFFIX,pressreader.io,PressReader-日本-差
+DOMAIN-SUFFIX,pressdisplay.com,PressReader-日本-差
+DOMAIN-SUFFIX,prcdn.co,PressReader-日本-差
+DOMAIN-SUFFIX,newspaperdirect.com,PressReader-日本-差
+DOMAIN-SUFFIX,ndcds.net,PressReader-日本-差
+DOMAIN,ndcds.trafficmanager.net,PressReader-日本-差
+
+# Domestic -> direct; all other unmatched traffic -> lower-priority subscription
+GEOIP,CN,DIRECT
+FINAL,普通代理-差
