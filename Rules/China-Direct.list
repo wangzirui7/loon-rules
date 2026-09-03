@@ -1,0 +1,5 @@
+# NAME: China Direct (minimal)
+# PURPOSE: Select DIRECT for destinations geolocated in mainland China.
+# NOTE: Add this below the AI and PressReader rule sets, and above broad proxy/final rules.
+
+GEOIP,CN
