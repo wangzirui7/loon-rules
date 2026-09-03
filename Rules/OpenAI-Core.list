@@ -1,0 +1,15 @@
+# NAME: OpenAI Core (strict)
+# PURPOSE: Route ChatGPT/OpenAI through the policy group AI-好.
+# DESIGN: OpenAI-owned domains only. Shared support, analytics, payment, and CDN
+# domains are intentionally excluded so unrelated apps cannot use the good subscription.
+#
+# Sources:
+# https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps
+
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,oaistatsig.com
+DOMAIN,cdn.openaimerge.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
